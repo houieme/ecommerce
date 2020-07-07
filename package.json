@@ -9,7 +9,7 @@
     "test": "mocha --timeout 10000",
     "ecommerce-front": "npm start --prefix ecommerce-front",
     "dev": "concurrently \"npm run server\" \"npm run front\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix front && npm run build --prefix ecommerce-front"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ecommerce-front && npm run build --prefix ecommerce-front"
   },
   "keywords": [],
   "author": "",
