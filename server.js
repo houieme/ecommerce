@@ -49,7 +49,7 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static('ecommerce-front/build'));
   
     app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'fecommerce-ront', 'build', 'index.html'));
+      res.sendFile(path.resolve(__dirname, 'ecommerce-ront', 'build', 'index.html'));
     });
   }
 
