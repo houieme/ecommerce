@@ -13,7 +13,7 @@ const categoryRoutes = require('./routes/category');
 const productRoutes = require('./routes/product');
 const braintreeRoutes = require('./routes/braintree');
 const orderRoutes = require('./routes/order');
-
+const path = require('path');
 // app
 const app = express();
 
