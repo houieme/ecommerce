@@ -10,7 +10,7 @@
     "front": "npm start --prefix front",
     "build": "react-scripts build",
     "dev": "concurrently \"npm run server\" \"npm run front\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build "
+    "heroku-postbuild": "cd front && npm install npm && run build "
   },
   "keywords": [],
   "author": "",
