@@ -40,7 +40,7 @@ app.use('/api', braintreeRoutes);
 app.use('/api', orderRoutes);
 
 const PORT = process.env.PORT || 8000;
-
+app.use('/', express.static('front/build'));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
