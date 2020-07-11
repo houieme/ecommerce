@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "concurrently \"npm run server\" \"npm run front\"",
     "server": "nodemon server",
     "test": "mocha --timeout 10000",
     "front": "npm start --prefix front",
@@ -38,5 +38,8 @@
   "engines": {
     "node": "13.7.x",
     "npm": "6.13.x"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
   }
 }
